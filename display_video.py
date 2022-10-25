@@ -1,4 +1,4 @@
-from math import floor
+from math import floor, dist
 from typing import NoReturn
 
 import cv2
@@ -61,20 +61,31 @@ def get_detection_data(video_path: str) -> dict:
         data = json.load(file)
     return data
 
-def show_overlay(frame:numpy.ndarray, frame_data: dict, class_colours: dict) -> None:
+def show_overlay(frame: numpy.ndarray, frame_data: dict, class_colours: dict) -> None:
     bounding_boxes = frame_data['bounding boxes']
     detection_classes = frame_data['detected classes']
+    centroids = frame_data['centroids']
+    ids = frame_data['ids']
     
-    for i in bounding_boxes:
-        start_point = (i[0]//2,i[1]//2)
-        end_point = ((i[0] + i[2])//2, (i[1] + i[3])//2)
-        centroid = ((i[0] + (i[2])//2)//2, (i[1] + (i[3])//2)//2)
-        detected_object_index = bounding_boxes.index(i)
+    font = cv2.FONT_HERSHEY_COMPLEX
+    
+    for box in bounding_boxes:
+        start_point = (box[0]//2,box[1]//2)
+        end_point = ((box[0] + box[2])//2, (box[1] + box[3])//2)
+        detected_object_index = bounding_boxes.index(box)
+        
         if detection_classes[detected_object_index] not in class_colours:
             class_colours[detection_classes[detected_object_index]] = (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+        
         if detection_classes[detected_object_index] == 'person':
             cv2.rectangle(frame, start_point, end_point, class_colours[detection_classes[detected_object_index]], 3)
-            cv2.circle(frame, centroid, 5, (255, 0,0), -1)
+            cv2.circle(frame, 
+                       tuple(coordinate//2 for coordinate in centroids[detected_object_index]),
+                       5, (255, 0,0), -1)
+            cv2.putText(frame, 
+                        ids[detected_object_index], 
+                        tuple(coordinate//2 for coordinate in centroids[detected_object_index]), 
+                        font,1,(255,0,0), 2)
 
 def main(video_path: str, title: str) -> NoReturn:
     """Displays a video at half size until it is complete or the 'q' key is pressed.
@@ -94,17 +105,34 @@ def main(video_path: str, title: str) -> NoReturn:
     try:
         # read the first frame
         success, frame = video_capture.read()
-        print(type(frame))
         frame_num = frame_num + 1 
 
         # create the window
         cv2.namedWindow(title, cv2.WINDOW_AUTOSIZE)
-
+        last_frame = {}
+        id_counter = 0
         # run whilst there are frames and the window is still open
         while success:
             # get detection data for the current frame
             frame_data = detection_data[str(frame_num)]
+            frame_data['centroids'] = []
+            frame_data['ids'] = []
+            for i in frame_data['bounding boxes']:
+                frame_data['centroids'].append(((i[0] + (i[2])//2), (i[1] + (i[3])//2)))
             
+            for i in frame_data['detected classes']:
+                frame_data['ids'].append(f'ID:{id_counter}')
+                id_counter += 1 
+
+            if last_frame != {}:
+                distances = {}
+                for i in frame_data['centroids']:
+                    distances[i] = {}
+                    for j in last_frame['centroids']:
+                        distances[i][j] = dist(i,j)
+                        if dist(i,j) < 100:
+                            frame_data['ids'][frame_data['centroids'].index(i)] = last_frame['ids'][last_frame['centroids'].index(j)]
+
             # shrink it            
             smaller_image = cv2.resize(frame, (floor(width // 2), floor(height // 2)))
 
@@ -121,10 +149,11 @@ def main(video_path: str, title: str) -> NoReturn:
             # read the next frame
             success, frame = video_capture.read()
             frame_num = frame_num + 1
+            last_frame = frame_data
     finally:
         video_capture.release()
         cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    VIDEO_PATH = "resources/video_2.mp4"
+    VIDEO_PATH = "resources/video_1.mp4"
     main(VIDEO_PATH, "My Video")
