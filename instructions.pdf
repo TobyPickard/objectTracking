@@ -1,0 +1,575 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 7 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/Contents 18 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 17 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/Contents 19 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 17 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+8 0 obj
+<<
+/Contents 20 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 17 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/Outlines 11 0 R /PageLabels 21 0 R /PageMode /UseNone /Pages 17 0 R /Type /Catalog
+>>
+endobj
+10 0 obj
+<<
+/Author () /CreationDate (D:20220906135107+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220906135107+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Humanising Autonomy Python Challenge) /Trapped /False
+>>
+endobj
+11 0 obj
+<<
+/Count 6 /First 12 0 R /Last 16 0 R /Type /Outlines
+>>
+endobj
+12 0 obj
+<<
+/Count 3 /Dest [ 5 0 R /XYZ 57.02362 705.0236 0 ] /First 13 0 R /Last 15 0 R /Next 16 0 R /Parent 11 0 R 
+  /Title (Introduction)
+>>
+endobj
+13 0 obj
+<<
+/Dest [ 8 0 R /XYZ 57.02362 647.8236 0 ] /Next 14 0 R /Parent 12 0 R /Title (Files)
+>>
+endobj
+14 0 obj
+<<
+/Dest [ 8 0 R /XYZ 57.02362 426.8236 0 ] /Next 15 0 R /Parent 12 0 R /Prev 13 0 R /Title (Warm up)
+>>
+endobj
+15 0 obj
+<<
+/Dest [ 8 0 R /XYZ 57.02362 366.8236 0 ] /Parent 12 0 R /Prev 14 0 R /Title (Tracking Test)
+>>
+endobj
+16 0 obj
+<<
+/Dest [ 8 0 R /XYZ 57.02362 149.8236 0 ] /Parent 11 0 R /Prev 12 0 R /Title (Submission)
+>>
+endobj
+17 0 obj
+<<
+/Count 3 /Kids [ 5 0 R 6 0 R 8 0 R ] /Type /Pages
+>>
+endobj
+18 0 obj
+<<
+/Length 2060
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+.133333 .133333 .133333 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 72.55417 0 Td (Humanising Autonomy Python Challenge) Tj T* -72.55417 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 684.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf .133333 .133333 .133333 rg (Introduction) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 642.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 2.572739 Tw (Humanising Autonomny have developed a detection model which looks at videos and for each frame) Tj T* 0 Tw .25402 Tw (identifies the locations of objects and our confidence that we have identified the class of the object correctly.) Tj T* 0 Tw (This is an example of the model output for a 3 frame video:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 68.82362 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 480.0283 564 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 542 Tm /F3 10 Tf 12 TL ({) Tj T* ("1": {) Tj T* (       "bounding boxes": [) Tj T* (       [) Tj T* (              867,) Tj T* (              712,) Tj T* (              24,) Tj T* (              22) Tj T* (       ]) Tj T* (       ],) Tj T* (       "detection scores": [) Tj T* (       0.5579711198806763) Tj T* (       ],) Tj T* (       "detected classes": [) Tj T* (       "car") Tj T* (       ]) Tj T* (},) Tj T* ("2": {) Tj T* (       "bounding boxes": [) Tj T* (       [) Tj T* (              865,) Tj T* (              712,) Tj T* (              24,) Tj T* (              21) Tj T* (       ],) Tj T* (       [) Tj T* (              745,) Tj T* (              692,) Tj T* (              112,) Tj T* (              95) Tj T* (       ],) Tj T* (       [) Tj T* (              973,) Tj T* (              717,) Tj T* (              16,) Tj T* (              32) Tj T* (       ],) Tj T* (       [) Tj T* (              1081,) Tj T* (              710,) Tj T* (              20,) Tj T* (              48) Tj T* (       ]) Tj T* (       ],) Tj T* (       "detection scores": [) Tj T* (       0.6426031589508057,) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+19 0 obj
+<<
+/Length 1685
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 67.82362 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 480.0283 696 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 674 Tm /F3 10 Tf 12 TL (       0.6739102005958557,) Tj T* (       0.6911854147911072,) Tj T* (       0.7216816544532776) Tj T* (       ],) Tj T* (       "detected classes": [) Tj T* (       "car",) Tj T* (       "car",) Tj T* (       "person",) Tj T* (       "person") Tj T* (       ]) Tj T* (},) Tj T* ("3": {) Tj T* (       "bounding boxes": [) Tj T* (       [) Tj T* (              868,) Tj T* (              707,) Tj T* (              25,) Tj T* (              19) Tj T* (       ],) Tj T* (       [) Tj T* (              843,) Tj T* (              708,) Tj T* (              28,) Tj T* (              33) Tj T* (       ],) Tj T* (       [) Tj T* (              865,) Tj T* (              711,) Tj T* (              25,) Tj T* (              21) Tj T* (       ],) Tj T* (       [) Tj T* (              744,) Tj T* (              688,) Tj T* (              110,) Tj T* (              101) Tj T* (       ],) Tj T* (       [) Tj T* (              1080,) Tj T* (              704,) Tj T* (              21,) Tj T* (              54) Tj T* (       ]) Tj T* (       ],) Tj T* (       "detection scores": [) Tj T* (       0.5245904922485352,) Tj T* (       0.5434021949768066,) Tj T* (       0.5852199792861938,) Tj T* (       0.7162638306617737,) Tj T* (       0.7476180791854858) Tj T* (       ],) Tj T* (       "detected classes": [) Tj T* (       "car",) Tj T* (       "car",) Tj T* (       "car",) Tj T* (       "car",) Tj T* (       "person") Tj T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+20 0 obj
+<<
+/Length 6329
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 727.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 480.0283 36 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F3 10 Tf 12 TL (       ]) Tj T* (}}) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 659.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F1 10 Tf 12 TL -0.105075 Tw (The model outputs are stored as a dictionary in a json file, with frame ids as key. Each frame contains a list of) Tj T* 0 Tw .735159 Tw (bounding boxes, a list of scores and a list of classes. You can match them all by taking the element at the) Tj T* 0 Tw 2.042545 Tw (same index in all the lists. The bounding boxes are stored in a list containing first their top left corner) Tj T* 0 Tw .577808 Tw (coordinates \(x and y pixel coordinates\) then their width and height. Ex: [150, 36, 60, 45] The top left corner) Tj T* 0 Tw (coordinates on the frame are \(150, 36\), the bounding box width is 60 and the bounding box height is 45.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 629.8236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf .133333 .133333 .133333 rg (Files) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 611.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (You should have received a number of files from us:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 595.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL (instructions.txt) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 580.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (this file) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 564.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL (display_video.py) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 549.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (an example OpenCV file which displays a video at half its native resolution) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 533.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL (resources/video_{1,2,3}.mp3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 518.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (3 example video files) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 502.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL (resouces/video_{1,2,3}_detection.json) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 487.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (the output of our detection model in json format for each of the three videos.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 471.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL (requirements.pdf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 456.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (the library requirements for the example code) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 438.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (In order for the display_video.py to run, you must be running python 3.10.5.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 408.8236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf .133333 .133333 .133333 rg (Warm up) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 378.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.795176 Tw (We'll provide you with open-cv code to open and display a video, but we would like you to overlay the) Tj T* 0 Tw (bounding boxes on the screen with different colors for different classes.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 348.8236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf .133333 .133333 .133333 rg (Tracking Test) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 318.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.225702 Tw (A classic, hard CV problem is how to track individual objects from frame to frame. The best minds in the) Tj T* 0 Tw (world are still struggling with this problem.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 288.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .210874 Tw (We'd like you to have a crack at it. We're not expecting you to solve this problem \(obviously\), but we want to) Tj T* 0 Tw (see how you write code and we look forward to discussing with you, the challenges you faced.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 258.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .643797 Tw (For pedestrians, only, write a program that uses their bounding boxes to track them for as many frames as) Tj T* 0 Tw (you can manage. Even if you only manage a few frames of tracking, we'll be impressed.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 242.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL (Here are some guidelines about an object tracking using Euclidean distance:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 161.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 68 Tm  T* ET
+q
+1 0 0 1 20 72 cm
+Q
+q
+1 0 0 1 20 72 cm
+Q
+q
+1 0 0 1 20 48 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.844609 Tw (Generate an id number per new object and display them on the screen, so that we can track) Tj T* 0 Tw (individual objects.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 42 cm
+Q
+q
+1 0 0 1 20 18 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .12789 Tw (Use the previous frame as the referenced frame: save the object coordinates of the previous frame) Tj T* 0 Tw (and compare them to the current frame.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 12 cm
+Q
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Use the Euclidian distance to match objects between the current frame and referenced frame.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 128.8236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf .133333 .133333 .133333 rg (Submission) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 110.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Please upload your submission to a public github repository and let Julia have the URL.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+21 0 obj
+<<
+/Nums [ 0 22 0 R 1 23 0 R 2 24 0 R ]
+>>
+endobj
+22 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+23 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+24 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+xref
+0 25
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000455 00000 n 
+0000000660 00000 n 
+0000000865 00000 n 
+0000000977 00000 n 
+0000001182 00000 n 
+0000001287 00000 n 
+0000001581 00000 n 
+0000001655 00000 n 
+0000001807 00000 n 
+0000001913 00000 n 
+0000002034 00000 n 
+0000002148 00000 n 
+0000002259 00000 n 
+0000002331 00000 n 
+0000004443 00000 n 
+0000006180 00000 n 
+0000012561 00000 n 
+0000012620 00000 n 
+0000012654 00000 n 
+0000012688 00000 n 
+trailer
+<<
+/ID 
+[<d90adb0e2ca09df917cb034c4c5154fc><d90adb0e2ca09df917cb034c4c5154fc>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 10 0 R
+/Root 9 0 R
+/Size 25
+>>
+startxref
+12722
+%%EOF
