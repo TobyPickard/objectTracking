@@ -5,7 +5,10 @@ import cv2
 import json
 import random
 import numpy
-import time 
+
+###############################################################################
+#------------------------- Functions provided to me --------------------------#
+###############################################################################
 
 def open_video(path: str) -> cv2.VideoCapture:
     """Opens a video file.
@@ -56,13 +59,16 @@ def is_window_open(title: str) -> bool:
     # all attempts to get a window property return -1 if the window is closed
     return cv2.getWindowProperty(title, cv2.WND_PROP_VISIBLE) >= 1
 
+###############################################################################
+#--------------------------- Functions made by me ----------------------------#
+###############################################################################
+
 def get_detection_data(video_path: str) -> dict:
-    """automatically gets the correct detection data based on which video is being used"""
-    
+    """Automatically gets the correct detection data based on which video is being used"""
+
     file_prefix = video_path.split('.')[0]
     with open(f'{file_prefix}_detections.json', 'r') as file:
-        data = json.load(file)
-    return data
+        return json.load(file)
 
 def show_overlay(frame: numpy.ndarray, frame_data: dict, class_colours: dict) -> None:
     """Adds the boxe data around, centroid and id to all people detected in the video
@@ -75,6 +81,7 @@ def show_overlay(frame: numpy.ndarray, frame_data: dict, class_colours: dict) ->
     Returns:
         None
     """
+    
     bounding_boxes = frame_data['bounding boxes']
     detection_classes = frame_data['detected classes']
     centroids = frame_data['centroids']
@@ -115,11 +122,13 @@ def show_overlay(frame: numpy.ndarray, frame_data: dict, class_colours: dict) ->
 
 def caluculate_centroids(frame_data: dict) -> None:
     """Calcultes the center point of each object detected in the video"""
+
     for box in frame_data['bounding boxes']:
         frame_data['centroids'].append(((box[0] + (box[2])//2), (box[1] + (box[3])//2)))
 
 def set_initial_id(frame_data: dict, id_counter: int) -> None:
     """Setting the ID value for each person detected"""
+
     for i in frame_data['detected classes']:
         if i == 'person':
             frame_data['ids'].append(f'ID:{id_counter}')
@@ -130,6 +139,7 @@ def set_initial_id(frame_data: dict, id_counter: int) -> None:
 
 def track_objects(frame_data: dict, last_frame:dict) -> None:
     """Compares current and last frame data to see if there are any objects that are likley to be the same object."""
+
     if last_frame != {}:
         for centroid in frame_data['centroids']:
             for reference_centroid in last_frame['centroids']:
