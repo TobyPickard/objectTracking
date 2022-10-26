@@ -1,4 +1,3 @@
-from dis import dis
 from math import floor, dist
 from typing import NoReturn
 
@@ -134,7 +133,7 @@ def track_objects(frame_data: dict, last_frame:dict) -> None:
     if last_frame != {}:
         for centroid in frame_data['centroids']:
             for reference_centroid in last_frame['centroids']:
-                if dist(centroid,reference_centroid) < 50:
+                if dist(centroid,reference_centroid) < 20:
                     frame_data['ids'][frame_data['centroids'].index(centroid)] = \
                         last_frame['ids'][last_frame['centroids'].index(reference_centroid)]
 
@@ -199,5 +198,5 @@ def main(video_path: str, title: str) -> NoReturn:
         cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    VIDEO_PATH = "resources/video_1.mp4"
+    VIDEO_PATH = "resources/video_3.mp4"
     main(VIDEO_PATH, "My Video")
